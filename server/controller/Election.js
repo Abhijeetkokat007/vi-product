@@ -1,4 +1,4 @@
-import Election from "./../models/election.js";
+import Election from "./../models/Election.js";
 
 export const addele = async (req, res) => {
     const { title, description, nominationPeriod, campaignPeriod, votingPeriod, resultDeclaration } = req.body;
