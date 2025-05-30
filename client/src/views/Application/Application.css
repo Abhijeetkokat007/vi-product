@@ -1,0 +1,128 @@
+.se-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .se-card {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .se-card-header {
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+  }
+  
+  .se-card-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .se-card-body {
+    padding: 20px;
+  }
+  
+  .se-form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+  
+  .se-form-row label {
+    flex: 0 0 200px;
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .se-input-wrap {
+    flex: 1;
+  }
+  
+  .se-input-wrap input,
+  .se-input-wrap select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .se-input-wrap input:focus,
+  .se-input-wrap select:focus {
+    outline: none;
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  .se-submit-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .se-submit-row button {
+    padding: 12px 40px;
+    background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .se-submit-row button:hover {
+    background-color: #0056b3;
+  }
+  
+  .se-input-wrap select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 12 12'%3E%3Cpath d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .se-form-row {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .se-form-row label {
+      flex: none;
+      text-align: left;
+      width: 100%;
+    }
+  
+    .se-input-wrap {
+      width: 100%;
+    }
+  
+    .se-card {
+      margin: 10px;
+    }
+  
+    .se-card-header h2 {
+      font-size: 20px;
+    }
+  
+    .se-input-wrap input,
+    .se-input-wrap select,
+    .se-submit-row button {
+      font-size: 14px;
+    }
+  }
