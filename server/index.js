@@ -13,8 +13,14 @@ import { submitContactForm } from './controller/Contact.js';
 dotenv.config();
 const __dirname = path.resolve();
 const app = express();
-app.use(cors());
+// app.use(cors());
 app.use(express.json());
+
+app.use(cors({
+  origin: '*',
+  credentials: true,
+}));
+
 
 const MongoDBConn = async () => {
   try {
