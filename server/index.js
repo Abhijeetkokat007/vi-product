@@ -25,7 +25,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // ✅ Proper CORS setup
-const allowedOrigins = ['https://vi-product.onrender.com'];
+const allowedOrigins = ['https://vi-product-ak.onrender.com'];
 
 app.use(cors({
   origin: function (origin, callback) {
