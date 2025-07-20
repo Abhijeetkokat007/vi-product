@@ -1,6 +1,3 @@
 ## VI Product
 
 
-
-
-
